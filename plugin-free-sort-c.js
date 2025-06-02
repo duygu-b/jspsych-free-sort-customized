@@ -1,3 +1,10 @@
+/**
+ * Modified version of jsPsych FreeSort Plugin by Duygu B.
+ * Original source: https://github.com/jspsych/jsPsych
+ * Adds support for fixed image locations instead of random placement.
+ * Suitable for drag-and-drop spatial memory or categorization tasks.
+ * Tested with jsPsych 7.3.0
+ */
 var jsPsychFreeSort = (function (jspsych) {
   'use strict';
 
