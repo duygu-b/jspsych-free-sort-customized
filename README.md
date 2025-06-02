@@ -48,6 +48,7 @@ const sort_trial = {
   stim_height: 60,
   sort_area_width: 500,
   sort_area_height: 500,
+  stim_starts_inside: true,
   prompt: "<p>Click and drag the images below to sort them so that similar items are close together.</p>"
 };
 
