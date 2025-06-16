@@ -331,6 +331,7 @@ var jsPsychFreeSort = (function (jspsych) {
       }
       for (const draggable of draggables) {
         draggable.addEventListener("pointerdown", function({ clientX: pageX, clientY: pageY }) {
+	this.parentNode.appendChild(this);  // to move the dragged image to the end of the DOM so it appears on top
           let x = pageX - this.offsetLeft;
           let y = pageY - this.offsetTop - window.scrollY;
           this.style.transform = "scale(" + trial.scale_factor + "," + trial.scale_factor + ")";
