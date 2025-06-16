@@ -14,6 +14,7 @@ The main difference is that images are **positioned at pre-defined coordinates**
 - Added support for fixed `x` and `y` coordinates for each item
 - Removed the default random placement behavior
 - Optionally includes boundary constraints if needed
+- Ensured the dragged item always appears on top by re-appending it to the DOM (`this.parentNode.appendChild(this)`) during drag events.
 
 ## Tested With
 
@@ -23,7 +24,6 @@ The main difference is that images are **positioned at pre-defined coordinates**
 ## Files
 
 - `plugin-free-sort-fixed.js` → the main modified plugin
-- `example.html` → a minimal working demo
 
 ## Usage Example
 
